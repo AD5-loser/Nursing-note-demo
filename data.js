@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Nursing Notebook - Authoritative Course & Exam Data
  * Rajshahi Medical University (RMU) - B.Sc. in Nursing
  * Verified Source of Truth: PRD v2.0
@@ -432,7 +432,121 @@ const NURSING_DATA = {
   ]
 };
 
-// Freeze object in production if desired, or export for node/browser
+/**
+ * Bangladesh Nursing and Midwifery Council (BNMC)
+ * Bachelor of Science in Nursing (4 Years Program) Examination System 2024
+ * Official Authoritative Dataset
+ */
+const BNMC_EXAM_SYSTEM_2024 = {
+  title: "Bachelor of Science in Nursing (4 Years Program) Examination System 2024",
+  authority: "Bangladesh Nursing and Midwifery Council (BNMC)",
+  address: "203, Shaheed Syed Nazrul Islam Sarani, Bijaynagar, Dhaka–1000",
+  email: "info@bnmc.gov.bd",
+  website: "www.bnmc.gov.bd",
+  grandTotalMarks: 4100,
+  passingCriteria: {
+    minimumPercentage: 60,
+    rule: "60% marks must be obtained in written, oral, & practical/clinical examinations separately.",
+    noNegativeMarking: true,
+    negativeMarkingRule: "No negative marks will be given for wrong answer.",
+    roundingRule: "Fraction mark 0.5 or over will be considered as 1 and below 0.5 will not be counted."
+  },
+  examFormats: [
+    {
+      type: "90 Marks Written Summative",
+      duration: "3 Hours",
+      mcqSba: "20 marks (20 minutes)",
+      writtenTheory: "70 marks (2 hours 40 minutes) — SAQ + SEQ + EQ",
+      details: "MCQ (T/F) 5 alternatives (0.2 mark each = 1 mark) + Single Best Answer (SBA) 4 options (1 mark each)."
+    },
+    {
+      type: "60 Marks Written Summative",
+      duration: "2 Hours 30 minutes",
+      mcqSba: "20 marks (20 minutes)",
+      writtenTheory: "40 marks (2 hours 10 minutes) — SAQ + SEQ",
+      details: "Used for Communicative English, Nursing Informatics, Pharmacology, Laws/Ethics, and Administration."
+    }
+  ],
+  assessmentMethods: {
+    soe: {
+      name: "Structured Oral Examination (SOE)",
+      boxes: "5 Boxes (3 Boxes Recall [15-20 Qs each], 1 Box Analytical [10-15 Qs], 1 Box Problem-based [10-15 Qs])",
+      rules: "Students pick questions from boxes. Both internal and external examiners provide marks separately and average is taken."
+    },
+    ospe: {
+      name: "Objective Structured Practical Examination (OSPE)",
+      components: "Spotting Stations (3-4 mins per station) + Procedure Stations (5-10 mins, 6-8 procedure cards)",
+      rules: "Student performs clinical tasks observed via checklist. OSPE is not used for Communicative English, Informatics, Pharmacology, Laws/Ethics, and Administration."
+    },
+    formative: {
+      theoryFormative: "Attendance (2 marks, ≥85%), Mid-term examination (4 marks: 60-69%=2, 70-79%=3, ≥80%=4), In-course assignment (4 marks). Total: 10 marks (Pass eligibility: 6/10).",
+      clinicalFormative: "Practical attendance/discipline (2 marks: 100%), Field visit/clinical report (4 marks), Case studies & presentation (4 marks). Total: 10 marks."
+    }
+  },
+  yearSummaries: [
+    { year: "1st Year", marks: 1000, coursesCount: 7, status: "Active Archive" },
+    { year: "2nd Year", marks: 1150, coursesCount: 7, status: "Curriculum Ready" },
+    { year: "3rd Year", marks: 950, coursesCount: 5, status: "Curriculum Ready" },
+    { year: "4th Year", marks: 1000, coursesCount: 6, status: "Curriculum Ready" }
+  ],
+  years: [
+    {
+      id: "1st-year",
+      name: "1st Year",
+      totalMarks: 1000,
+      courses: [
+        { code: "B111", name: "Communicative English", category: "General", credits: 4, writtenMarks: 60, oralMarks: 30, practicalMarks: 0, formativeWrittenMarks: 10, formativePracticalMarks: 0, totalMarks: 100 },
+        { code: "B112", name: "Nursing Informatics", category: "General", credits: 4.5, writtenMarks: 60, oralMarks: 10, practicalMarks: 20, formativeWrittenMarks: 10, formativePracticalMarks: 0, totalMarks: 100 },
+        { code: "B113", name: "Behavioral Science and Nursing Humanities", category: "General", credits: 6, writtenMarks: 90, oralMarks: 45, practicalMarks: 0, formativeWrittenMarks: 10, formativePracticalMarks: 5, totalMarks: 150 },
+        { code: "B124", name: "Anatomy", category: "Foundational", credits: 7.5, writtenMarks: 90, oralMarks: 25, practicalMarks: 20, formativeWrittenMarks: 10, formativePracticalMarks: 5, totalMarks: 150 },
+        { code: "B125", name: "Physiology", category: "Foundational", credits: 7.5, writtenMarks: 90, oralMarks: 25, practicalMarks: 20, formativeWrittenMarks: 10, formativePracticalMarks: 5, totalMarks: 150 },
+        { code: "B126", name: "Microbiology and Pathology", category: "Foundational", credits: 5.75, writtenMarks: 90, oralMarks: 25, practicalMarks: 20, formativeWrittenMarks: 10, formativePracticalMarks: 5, totalMarks: 150 },
+        { code: "B137", name: "Fundamentals of Nursing–I", category: "Professional", credits: 22.5, writtenMarks: 90, oralMarks: 40, practicalMarks: 50, formativeWrittenMarks: 10, formativePracticalMarks: 10, totalMarks: 200 }
+      ]
+    },
+    {
+      id: "2nd-year",
+      name: "2nd Year",
+      totalMarks: 1150,
+      courses: [
+        { code: "B231", name: "Fundamentals of Nursing–II", category: "Professional", writtenMarks: 90, oralMarks: 40, practicalMarks: 50, formativeWrittenMarks: 10, formativePracticalMarks: 10, totalMarks: 200 },
+        { code: "B232", name: "Pediatric Nursing", category: "Professional", writtenMarks: 90, oralMarks: 40, practicalMarks: 50, formativeWrittenMarks: 10, formativePracticalMarks: 10, totalMarks: 200 },
+        { code: "B233", name: "Medical and Surgical Nursing–I", category: "Professional", writtenMarks: 90, oralMarks: 40, practicalMarks: 50, formativeWrittenMarks: 10, formativePracticalMarks: 10, totalMarks: 200 },
+        { code: "B224", name: "Pharmacology", category: "Foundational", writtenMarks: 60, oralMarks: 30, practicalMarks: 0, formativeWrittenMarks: 10, formativePracticalMarks: 0, totalMarks: 100 },
+        { code: "B235", name: "Traumatology and Orthopedic Nursing", category: "Professional", writtenMarks: 90, oralMarks: 40, practicalMarks: 50, formativeWrittenMarks: 10, formativePracticalMarks: 10, totalMarks: 200 },
+        { code: "B226", name: "Nutrition and Biochemistry", category: "Foundational", writtenMarks: 90, oralMarks: 25, practicalMarks: 20, formativeWrittenMarks: 10, formativePracticalMarks: 5, totalMarks: 150 },
+        { code: "B237", name: "Laws, Ethics and Forensic Nursing", category: "Professional", writtenMarks: 60, oralMarks: 30, practicalMarks: 0, formativeWrittenMarks: 10, formativePracticalMarks: 0, totalMarks: 100 }
+      ]
+    },
+    {
+      id: "3rd-year",
+      name: "3rd Year",
+      totalMarks: 950,
+      courses: [
+        { code: "B331", name: "Geriatric Nursing", category: "Professional", writtenMarks: 90, oralMarks: 25, practicalMarks: 20, formativeWrittenMarks: 10, formativePracticalMarks: 5, totalMarks: 150 },
+        { code: "B332", name: "Mental Health and Psychiatric Nursing", category: "Professional", writtenMarks: 90, oralMarks: 40, practicalMarks: 50, formativeWrittenMarks: 10, formativePracticalMarks: 10, totalMarks: 200 },
+        { code: "B333", name: "Emergency and Critical Care Nursing", category: "Professional", writtenMarks: 90, oralMarks: 40, practicalMarks: 50, formativeWrittenMarks: 10, formativePracticalMarks: 10, totalMarks: 200 },
+        { code: "B334", name: "Medical and Surgical Nursing–II", category: "Professional", writtenMarks: 90, oralMarks: 40, practicalMarks: 50, formativeWrittenMarks: 10, formativePracticalMarks: 10, totalMarks: 200 },
+        { code: "B335", name: "Community Health Nursing and Epidemiology", category: "Professional", writtenMarks: 90, oralMarks: 40, practicalMarks: 50, formativeWrittenMarks: 10, formativePracticalMarks: 10, totalMarks: 200 }
+      ]
+    },
+    {
+      id: "4th-year",
+      name: "4th Year",
+      totalMarks: 1000,
+      courses: [
+        { code: "B431", name: "Midwifery", category: "Professional", writtenMarks: 90, oralMarks: 40, practicalMarks: 50, formativeWrittenMarks: 10, formativePracticalMarks: 10, totalMarks: 200 },
+        { code: "B432", name: "Obstetrical and Gynecological Nursing", category: "Professional", writtenMarks: 90, oralMarks: 40, practicalMarks: 50, formativeWrittenMarks: 10, formativePracticalMarks: 10, totalMarks: 200 },
+        { code: "B433", name: "Nursing Administration and Management", category: "Professional", writtenMarks: 60, oralMarks: 30, practicalMarks: 0, formativeWrittenMarks: 10, formativePracticalMarks: 0, totalMarks: 100 },
+        { code: "B434", name: "Nursing Education", category: "Professional", writtenMarks: 90, oralMarks: 40, practicalMarks: 50, formativeWrittenMarks: 10, formativePracticalMarks: 10, totalMarks: 200 },
+        { code: "B435", name: "Research and Biostatistics", category: "Professional", writtenMarks: 90, oralMarks: 20, practicalMarks: 40, formativeWrittenMarks: 10, formativePracticalMarks: 40, totalMarks: 200, note: "Practical 40 marks = Research Book; Formative Practical 40 marks = Research Defense" },
+        { code: "B416", name: "Advanced Communicative English", category: "General", writtenMarks: 60, oralMarks: 30, practicalMarks: 0, formativeWrittenMarks: 10, formativePracticalMarks: 0, totalMarks: 100 }
+      ]
+    }
+  ]
+};
+
+// Freeze and export for Node / Browser
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = NURSING_DATA;
+  module.exports = { NURSING_DATA, BNMC_EXAM_SYSTEM_2024 };
 }

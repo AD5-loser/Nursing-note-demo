@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <title>Nursing Notebook | Rajshahi Medical University Question Bank</title>
   <meta name="description" content="Official examination question bank for B.Sc. in Nursing under Rajshahi Medical University (RMU). Verified written and MCQ question papers from 2018 to 2024.">
+  <meta name="theme-color" content="#0F5C5E">
 
   <!-- Google Fonts: Lora (Headings) & Inter (Body/UI) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +14,9 @@
 
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-page="home">
+
+  <a class="skip-link" href="#view-container">Skip to content</a>
 
   <!-- Top Sticky Navigation -->
   <header class="site-header" role="banner">
@@ -31,6 +34,12 @@
       <nav class="desktop-nav" aria-label="Main Navigation">
         <ul class="nav-links">
           <li class="nav-item"><a href="#questions" id="nav-questions">Questions</a></li>
+          <li class="nav-item">
+            <a href="exam-system.html" id="nav-exam-system" class="nav-link-featured">
+              <span>Exam System 2024</span>
+              <span class="nav-pill-badge anim-pulse">BNMC</span>
+            </a>
+          </li>
           <li class="nav-item"><a href="about.html" id="nav-about">About</a></li>
         </ul>
       </nav>
@@ -49,6 +58,7 @@
     <ul class="mobile-nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#questions">Questions</a></li>
+      <li><a href="exam-system.html">Exam System 2024 (BNMC)</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
   </nav>
@@ -74,19 +84,21 @@
     <div class="container footer-inner">
       <div>
         <span class="footer-brand">Nursing Notebook</span> &mdash;
-        <span>Rajshahi Medical University (RMU)</span>
+        <span>Rajshahi Medical University (RMU) &bull; BNMC Affiliated</span>
       </div>
       <ul class="footer-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#questions">Questions</a></li>
+        <li><a href="exam-system.html">Exam System 2024</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
     </div>
   </footer>
 
-  <!-- Animation & Core Scripts -->
+  <!-- Animation & Core Scripts (all local, works offline via file://) -->
   <script src="assets/lottie.min.js"></script>
   <script src="assets/animations-bundle.js"></script>
+  <script src="assets/subject-icons.js"></script>
   <script src="data.js"></script>
   <script src="app.js"></script>
 </body>
