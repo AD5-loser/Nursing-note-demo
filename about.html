@@ -1,231 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <title>About | Nursing Notebook - Rajshahi Medical University</title>
-  <meta name="description" content="About Nursing Notebook — an academic question bank initiative for B.Sc. in Nursing students under Rajshahi Medical University (RMU).">
-  <meta name="theme-color" content="#0F5C5E">
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f7f2e7">
+<!--SEO--><title>About Nursing Notebook | Free RMU Nursing Question Papers</title><meta name="description" content="About Nursing Notebook: a free archive of RMU B.Sc. Nursing past question papers, by a nursing student from Nursing and Midwifery College, Bogura."><link rel="canonical" href="https://nursing-notebook.vercel.app/about.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Nursing Notebook"><meta property="og:title" content="About Nursing Notebook | Free RMU Nursing Question Papers"><meta property="og:description" content="About Nursing Notebook: a free archive of RMU B.Sc. Nursing past question papers, by a nursing student from Nursing and Midwifery College, Bogura."><meta property="og:url" content="https://nursing-notebook.vercel.app/about.html"><meta name="twitter:card" content="summary"><!--/SEO-->
 
-  <!-- Google Fonts: Lora (Headings) & Inter (Body/UI) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
-</head>
-<body data-page="about" class="about-page">
-
-  <a class="skip-link" href="#about-main">Skip to content</a>
-
-  <!-- Top Sticky Navigation -->
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <a href="index.html#home" class="brand" aria-label="Nursing Notebook Home">
-        <span class="brand-icon" aria-hidden="true">
-          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
-          </svg>
-        </span>
-        <span>Nursing Notebook</span>
-      </a>
-
-      <!-- Desktop Nav -->
-      <nav class="desktop-nav" aria-label="Main Navigation">
-        <ul class="nav-links">
-          <li class="nav-item"><a href="index.html#home">Home</a></li>
-          <li class="nav-item"><a href="index.html#questions">Questions</a></li>
-          <li class="nav-item">
-            <a href="exam-system.html" class="nav-link-featured">
-              <span>Exam System 2024</span>
-              <span class="nav-pill-badge anim-pulse">BNMC</span>
-            </a>
-          </li>
-          <li class="nav-item"><a href="about.html" class="active">About</a></li>
-        </ul>
-      </nav>
-
-      <!-- Mobile Menu Button -->
-      <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
-    </div>
-  </header>
-
-  <!-- Mobile Dropdown Navigation -->
-  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
-    <ul class="mobile-nav-links">
-      <li><a href="index.html#home">Home</a></li>
-      <li><a href="index.html#questions">Questions</a></li>
-      <li><a href="exam-system.html">Exam System 2024 (BNMC)</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-    </ul>
-  </nav>
-
-  <!-- Breadcrumb Navigation -->
-  <nav class="breadcrumb-bar" aria-label="Breadcrumbs">
-    <div class="container">
-      <ol class="breadcrumb-list">
-        <li class="breadcrumb-item"><a href="index.html#home">Home</a><span class="breadcrumb-separator">/</span></li>
-        <li class="breadcrumb-item breadcrumb-current" aria-current="page">About</li>
-      </ol>
-    </div>
-  </nav>
-
-  <!-- Main Content Wrapper -->
-  <main class="main-content" id="about-main">
-    <div class="container" style="max-width: 880px;">
-
-      <div class="hero-section about-intro">
-        <span class="hero-eyebrow">Academic Initiative</span>
-        <h1 class="hero-title">About Nursing Notebook</h1>
-        <p class="hero-description">
-          A dedicated, academic archive providing nursing students with access to verified previous year examination papers under Rajshahi Medical University (RMU).
-        </p>
-      </div>
-
-      <!-- Animated Academic Feature Card -->
-      <div class="animated-feature-card about-feature lottie-host">
-        <div id="about-lottie-box" class="lottie-container" data-lottie="doctor" aria-hidden="true"></div>
-        <div class="animated-card-content">
-          <span class="animated-card-badge">
-            <span class="animated-pulse-dot"></span>
-            <span>Digitized Academic Archive</span>
-          </span>
-          <h3 class="animated-card-title">Empowering Nursing Scholars</h3>
-          <p class="animated-card-desc">Preserving curriculum integrity and delivering open access to official Rajshahi Medical University examination papers.</p>
-        </div>
-      </div>
-
-      <!-- Live statistics (computed from data.js) -->
-      <div id="about-stats"></div>
-
-      <!-- What we stand for -->
-      <section class="home-section" aria-labelledby="values-heading">
-        <div class="section-header reveal">
-          <h2 id="values-heading" class="section-title">What We Stand For</h2>
-          <span class="section-subtitle">Built for students</span>
-        </div>
-        <div id="about-values"></div>
-      </section>
-
-      <!-- About Section 1: Overview & Scope -->
-      <article class="about-card reveal">
-        <h2>Mission &amp; Project Scope</h2>
-        <p>
-          <strong>Nursing Notebook</strong> is developed to streamline academic exam preparation for students enrolled in the <strong>B.Sc. in Nursing</strong> degree program affiliated with <strong>Rajshahi Medical University (RMU)</strong>.
-        </p>
-        <p>
-          Accessing authentic past questions has traditionally been challenging due to scattered files and inconsistent archives. This project organizes verified examination question papers by academic year, curriculum sequence, subject code, and exam type.
-        </p>
-        <p>
-          <strong>Phase 1 Scope:</strong> The current phase covers the complete 1st Year curriculum, hosting <strong><span data-stat="totalPapers">&nbsp;</span> verified examination papers</strong> across <span data-stat="subjectsWithContent">&nbsp;</span> subjects spanning <span data-stat="examRange">&nbsp;</span>.
-        </p>
-      </article>
-
-      <!-- How to use -->
-      <section class="home-section" aria-labelledby="how-heading">
-        <div class="section-header reveal">
-          <h2 id="how-heading" class="section-title">How to Use the Archive</h2>
-          <span class="section-subtitle">Three simple steps</span>
-        </div>
-        <div id="about-steps"></div>
-      </section>
-
-      <!-- About Section 2: Examination Paper Structure -->
-      <section class="home-section" aria-labelledby="structure-heading">
-        <div class="section-header reveal">
-          <h2 id="structure-heading" class="section-title">Examination Paper Structure</h2>
-          <span class="section-subtitle">Official RMU format by year</span>
-        </div>
-        <div id="about-paper-types"></div>
-        <article class="about-card reveal" style="margin-top: 20px;">
-          <ul>
-            <li><strong>2019 to 2024:</strong> Both <em>Written</em> and <em>MCQ (Multiple Choice Questions)</em> papers are available for each subject.</li>
-            <li><strong>2018:</strong> <em>Written</em> papers were administered under the foundational examination format.</li>
-          </ul>
-          <p>
-            Every paper link connects directly to high-resolution, verified documents hosted securely on Google Drive for immediate viewing or offline study.
-          </p>
-        </article>
-      </section>
-
-      <!-- Roadmap -->
-      <section class="home-section" aria-labelledby="roadmap-heading">
-        <div class="section-header reveal">
-          <h2 id="roadmap-heading" class="section-title">Phased Rollout</h2>
-          <span class="section-subtitle">1st Year is live</span>
-        </div>
-        <div id="about-roadmap"></div>
-      </section>
-
-      <!-- About Section 3: Curriculum Structure -->
-      <article class="about-card reveal">
-        <h2>B.Sc. in Nursing Curriculum</h2>
-        <p>
-          The 4-year undergraduate curriculum consists of <span data-stat="totalSubjects">&nbsp;</span> comprehensive subjects classified across General, Foundational, and Professional domains:
-        </p>
-
-        <div style="overflow-x: auto; margin-top: 18px;">
-          <table class="metadata-table">
-            <thead>
-              <tr>
-                <th>Year</th>
-                <th>Subjects</th>
-                <th>Total Papers</th>
-                <th>Current Status</th>
-              </tr>
-            </thead>
-            <tbody id="about-curriculum-body"></tbody>
-          </table>
-        </div>
-      </article>
-
-      <!-- FAQ -->
-      <section class="home-section" aria-labelledby="faq-heading">
-        <div class="section-header reveal">
-          <h2 id="faq-heading" class="section-title">Frequently Asked Questions</h2>
-          <span class="section-subtitle">Quick answers</span>
-        </div>
-        <div id="about-faq" class="reveal"></div>
-      </section>
-
-      <!-- About Section 4: Academic Integrity -->
-      <article class="about-card reveal">
-        <h2>Content Integrity &amp; Open Access</h2>
-        <p>
-          All course codes, subject titles, and sequence numbers strictly follow the syllabus set by Rajshahi Medical University. No synthetic or unverified question papers are included.
-        </p>
-        <p>
-          This archive is strictly for educational, non-commercial purposes to aid nursing scholars, educators, and candidates in understanding examination patterns and question trends.
-        </p>
-      </article>
-
-    </div>
-  </main>
-
-  <!-- Site Footer -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <span class="footer-brand">Nursing Notebook</span> &mdash;
-        <span>Rajshahi Medical University (RMU) &bull; BNMC Affiliated</span>
-      </div>
-      <ul class="footer-links">
-        <li><a href="index.html#home">Home</a></li>
-        <li><a href="index.html#questions">Questions</a></li>
-        <li><a href="exam-system.html">Exam System 2024</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </div>
-  </footer>
-
-  <!-- Scripts (all local, works offline via file://) -->
-  <script src="assets/lottie.min.js"></script>
-  <script src="assets/animations-bundle.js"></script>
-  <script src="data.js"></script>
-  <script src="app.js"></script>
-</body>
-</html>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
+<header class="top"><div class="top-in"><a class="brand" href="index.html#home"><span class="mark"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5a2 2 0 0 1 2-2h13v14H6a2 2 0 0 0-2 2z"/><path d="M4 19a2 2 0 0 0 2 2h13"/></svg></span>Nursing Notebook</a>
+<nav class="dnav" aria-label="Main"><a href="index.html#home">Home</a><a href="index.html#questions">Questions</a><a href="exam-system.html">Exam System</a><a href="about.html" class="on">About</a></nav></div></header>
+<main><div class="ab page">
+<h1 class="ab-t">Nursing Notebook</h1>
+<p class="ab-tag">Founded &amp; maintained by a Nursing Student from Nursing and Midwifery College, Bogura.</p>
+<div class="ab-q"><div class="ab-qt">"Dedicated to free and accessible education."</div><div class="ab-qs">built for 1st year, 2nd year, and all nursing students</div></div>
+<div class="coupon"><div class="scis">&#9986;</div>
+<p class="ab-bio">Created solely to provide students with past examination papers and academic resources completely free of charge.</p>
+<div class="ab-row"><a href="mailto:tukitaki2025@gmail.com" class="b-dark">Email me</a><a href="https://t.me/nursing_N0TE" target="_blank" rel="noopener noreferrer" class="b-out">Telegram</a></div>
+<button class="b-cof" id="dt" aria-expanded="false" aria-controls="ds"><span><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 9h11v5a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5z"/><path d="M16 10h2a2 2 0 0 1 0 4h-2"/><path d="M8 3v2M12 3v2"/></svg></span> Donate / Support</button>
+<div class="dsec" id="ds"><div class="sdiv"></div><p class="ab-note">Every contribution helps keep the archive updated.</p>
+<div class="sm"><span class="sm-l">bKash / Nagad (Send Money):</span><div class="npill"><span id="num"></span><button class="cbtn" id="cb" aria-label="Copy payment number">Copy</button></div></div>
+<span class="cnote" id="cn" role="status">Copied!</span></div></div>
+<div class="stats" aria-label="Archive statistics"><div class="stat"><b id="sP">0</b><span>Papers</span></div><div class="stat"><b id="sS">0</b><span>Subjects</span></div><div class="stat"><b id="sY">0</b><span>Exam years</span></div></div>
+<div class="purpose"><div class="pt">Our Objective</div><p>As a fellow nursing student, this platform was built with a single mission: to archive and provide previous years' question banks and study materials at zero cost for 1st Year, 2nd Year, and all prospective students across Bangladesh.</p></div>
+<div class="purpose"><div class="pt">What You Will Find</div><ul><li>Written and MCQ question papers, 2018 to 2025</li><li>Papers sorted by year and subject, with subject codes</li><li>Rajshahi Medical University (RMU) papers for B.Sc. in Nursing</li><li>A short guide to the BNMC 2024 exam system, with the official PDF</li></ul></div>
+<div class="faq"><div class="pt" style="margin-bottom:8px">Quick Answers</div>
+<details class="f"><summary>Is it really free?</summary><p>Yes. Every paper is free to view and always will be.</p></details>
+<details class="f"><summary>Why does a paper say "Coming soon"?</summary><p>It has not been collected yet. It will appear once it is added.</p></details>
+<details class="f"><summary>Can I send a missing paper?</summary><p>Yes. Message us on Telegram or email, and we will add it.</p></details>
+<details class="f"><summary>A link is not opening. What now?</summary><p>Tell us on Telegram or Facebook, and we will fix it.</p></details></div>
+<div class="links"><div class="lr"><span class="ll">FACEBOOK</span><a class="lt" href="https://www.facebook.com/profile.php?id=61595863536930" target="_blank" rel="noopener noreferrer">Nursing Notebook Page</a></div>
+<div class="lr"><span class="ll">TELEGRAM</span><a class="lt" href="https://t.me/nursing_N0TE" target="_blank" rel="noopener noreferrer">@nursing_N0TE</a></div>
+<div class="lr"><span class="ll">EMAIL</span><a class="lt" href="mailto:tukitaki2025@gmail.com">tukitaki2025@gmail.com</a></div></div>
+</div></main>
+<footer>Nursing Notebook — Rajshahi Medical University (RMU) · B.Sc. in Nursing</footer>
+<nav class="bnav" aria-label="Main"><a href="index.html#home"><span><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span>Home</a><a href="index.html#questions"><span><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/></svg></span>Questions</a><a href="exam-system.html"><span><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4h6v3H9z"/><path d="M9.5 14l2 2 3.5-4"/></svg></span>Exam</a><a href="about.html" class="on"><span><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg></span>About</a></nav>
+<script src="data.js"></script>
+<script>
+const $=s=>document.getElementById(s);$('num').textContent=PAY_NUMBER;
+$('dt').onclick=()=>{const v=$('ds').classList.toggle('show');$('dt').setAttribute('aria-expanded',v)};
+function ok(){$('cb').textContent='Copied!';$('cn').classList.add('on');setTimeout(()=>{$('cb').textContent='Copy';$('cn').classList.remove('on')},2000)}
+function fb(){try{const t=document.createElement('textarea');t.value=PAY_NUMBER;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();ok()}catch(e){$('cn').textContent='Copy failed';$('cn').classList.add('on')}}
+$('cb').onclick=()=>navigator.clipboard?navigator.clipboard.writeText(PAY_NUMBER).then(ok).catch(fb):fb();
+let p=0,s=0;PROGRAM.forEach(y=>y.subjects.forEach(x=>{const n=Object.values(x.papers).reduce((a,l)=>a+l.length,0);p+=n;if(n)s++}));
+$('sP').textContent=p;$('sS').textContent=s;$('sY').textContent=EXAM_YEARS.length;
+</script></body></html>
