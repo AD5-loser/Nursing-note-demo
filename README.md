@@ -3,7 +3,7 @@
 A free, static archive of past question papers for **B.Sc. in Nursing** (Rajshahi Medical University, BNMC 2024 curriculum), organised by academic year, subject and exam year. Diploma and Midwifery are planned for later.
 
 Built by a nursing student from Nursing and Midwifery College, Bogura, to keep exam resources free and easy to find on a phone.
-
+https://ad5-loser.github.io/Nursing-note-demo/
 ## Features
 
 - Question papers (Written and MCQ), exam years 2018 to 2025, grouped by year and subject with BNMC subject codes
